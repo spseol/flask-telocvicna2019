@@ -6,6 +6,7 @@ db = Database()
 db.bind(provider='sqlite', filename='./databaze.sqlite', create_db=True)
 
 
+
 class Uzivatel(db.Entity):
     id = PrimaryKey(int, auto=True)
     login = Required(str)
