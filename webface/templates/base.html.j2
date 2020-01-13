@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tělocvična</title>
+    <meta charset="utf-8" /> 
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favico.png') }}" />
+</head>
+<body>
+
+<h1>Tělocvična</h1>
+
+{% filter markdown %}
+I'm writing my templates in *Markdown!*
+Toto je [odkaz na google](http://google.com/).
+
+    ahoj
+    zdroják
+
+{% endfilter %}
+
+
+</body></html>

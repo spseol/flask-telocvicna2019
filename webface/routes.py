@@ -1,5 +1,6 @@
 from . import app
+from flask import render_template
 
 @app.route('/')
 def index():
-    return "To je Index"
+    return render_template('base.html.j2')
